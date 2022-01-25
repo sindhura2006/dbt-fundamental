@@ -1,9 +1,8 @@
-{{ config(
-    materialized="table"
-)
-}}
 
-with customers as (
+  create or replace  view RAW.dbt_palleti.dim_customers 
+  
+   as (
+    with customers as (
 
     select
         id as customer_id,
@@ -59,3 +58,4 @@ final as (
 )
 
 select * from final
+  );
