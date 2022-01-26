@@ -3,6 +3,7 @@
 )
 }}
 
+
 with customers as (
 
     select
