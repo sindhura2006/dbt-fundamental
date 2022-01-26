@@ -11,4 +11,4 @@ select
 from raw.stripe.payment
 )
 
-select * fro -m stgm payment
+select * from payment
